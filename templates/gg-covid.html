@@ -1,6 +1,3 @@
-{% set worldtotal = data1["worldtotal"] %}
-{% set braziltotal = data["brazildata"] %}
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +9,7 @@
     <title>P5 Super-Cool</title>
 </head>
 <body style="font-family:'Major Mono Display',Regular">
+
 <div class="topnav" style="text-decoration: none">
     <b><a href="home">home</a>
     <a href="geoguesser">geo guessr</a>
@@ -21,9 +19,9 @@
 </div>
   <b><a style="text-decoration: none" href="landing"><p class="navheader">covid-19 cases</p></b></a>
 </body>
-
-<body>
-Current covid cases: {{worldtotal}}
+    
+    <body>
+Current covid cases: [put big numbers here or something]
 
 </body>
 <!-- I experimented with image mapping here. This way i can make a clickable map which shows covid cases in specific regions -->
@@ -48,7 +46,7 @@ Current covid cases: {{worldtotal}}
 <script>
 function functBrazil() {
   var x = document.getElementById("covidInfo");
-  x.innerHTML = "{{braziltotal}}"
+  x.innerHTML = "Brazil"
 }
 
 function functIceland(){
@@ -78,5 +76,4 @@ function functIndia(){
 
 
 </script>
-
 </html>

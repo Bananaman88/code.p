@@ -102,6 +102,28 @@ body {margin:0;}
    justify-content: center;
 }
 
+.greece-header{
+   position: relative;
+   height: 100vh;
+   text-align: center;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   opacity: .6;
+   z-index: -5;
+
+}
+
+.location-pos{
+    position: relative;
+    top: -700px;
+    z-index: 3;
+}
+
+.heading-color{
+    color: #083047;
+}
+
 
 
 

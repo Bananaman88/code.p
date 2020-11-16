@@ -13,17 +13,14 @@ def home():
     return render_template("gg-home.html")
 
 @app.route("/covid")
-@app.route("/")
 def covid():
     return render_template("gg-covid.html", data=scraping.brazildata(), data1=scraping.worldtotal())
 
 @app.route("/p5")
-@app.route("/")
 def p5():
     return render_template("gg-p5.html")
 
 @app.route("/history")
-@app.route("/")
 def history():
     return render_template("gg-history.html")
 
